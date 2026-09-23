@@ -211,19 +211,19 @@ before a signal is generated.
 A signal is generated only after passing through the relevant
 quantitative and portfolio-level decision layers.
 
-ML Prediction
-      +
-Strategy Evaluation
-      +
-Market Context
-      +
-Opportunity
-      +
-Portfolio Constraints
-      +
-Risk Constraints
-      +
-Signal
+	ML Prediction
+		  +
+	Strategy Evaluation
+		  +
+	Market Context
+		  +
+	Opportunity
+		  +
+	Portfolio Constraints
+		  +
+	Risk Constraints
+		  +
+	Signal
 
 # 4. Multi-Timeframe & Market Structure
 The platform uses multiple execution timeframes:
@@ -279,12 +279,12 @@ Each family can operate across the supported execution timeframes:
 30m
 1h
 
-This creates:
-8 Strategy Families
-        x
-4 Execution Timeframes
-        =
-32 Family-Timeframe Combinations
+	This creates:
+	8 Strategy Families
+			x
+	4 Execution Timeframes
+			=
+	32 Family-Timeframe Combinations
 
 For example:
 TREND_PULLBACK_15m
@@ -335,34 +335,34 @@ Each portfolio has its own:
 
 A user can create multiple independent portfolios.
 
-User
- |
- +-- Portfolio 1
- |
- +-- Portfolio 2
- |
- +-- Portfolio 3
+	User
+	 |
+	 +-- Portfolio 1
+	 |
+	 +-- Portfolio 2
+	 |
+	 +-- Portfolio 3
  
 Each portfolio maintains independent performance statistics and
 trading history while using a predefined allocation from the user's
 overall capital.
 
 # 6.1 Portfolio Hierarchy
-Portfolio
-    |
-    +-- Group
-    |     |
-    |     +-- Strategy Family
-    |           |
-    |           +-- Strategy
-    |                 |
-    |                 +-- Trading Pair
-    |
-    +-- Group
-          |
-          +-- Strategy Family
-                |
-                +-- Strategy
+	Portfolio
+		|
+		+-- Group
+		|     |
+		|     +-- Strategy Family
+		|           |
+		|           +-- Strategy
+		|                 |
+		|                 +-- Trading Pair
+		|
+		+-- Group
+			  |
+			  +-- Strategy Family
+					|
+					+-- Strategy
 				
 
 This hierarchy allows users to construct portfolios from different
@@ -372,20 +372,20 @@ strategy behaviours and execution timeframes.
 Users can create multiple groups within a portfolio.
 
 For example:
-Group 1
- |
- +-- TREND_PULLBACK_15m
- +-- BREAKOUT_CONTINUATION_30m
- +-- RANGE_REJECTION_30m
- +-- TREND_REVERSION_5m
- 
- 
- Group 2
- |
- +-- COMPRESSION_BREAKOUT_30m
- +-- BREAKOUT_CONTINUATION_1h
- +-- LIQUIDITY_TRAP_REVERSAL_30m
- +-- RANGE_REVERSION_1h
+	Group 1
+	 |
+	 +-- TREND_PULLBACK_15m
+	 +-- BREAKOUT_CONTINUATION_30m
+	 +-- RANGE_REJECTION_30m
+	 +-- TREND_REVERSION_5m
+	 
+	 
+	 Group 2
+	 |
+	 +-- COMPRESSION_BREAKOUT_30m
+	 +-- BREAKOUT_CONTINUATION_1h
+	 +-- LIQUIDITY_TRAP_REVERSAL_30m
+	 +-- RANGE_REVERSION_1h
  
 Groups provide an additional portfolio-construction layer between
 individual strategy families and the overall portfolio.
@@ -406,13 +406,13 @@ portfolio-level trading universe.
 
 # 7. Risk Management Architecture
 Risk management is implemented hierarchically.
-Portfolio Risk
-      |
-      +-- Group Risk
-             |
-             +-- Family Risk
-                    |
-                    +-- Trade Risk
+	Portfolio Risk
+		  |
+		  +-- Group Risk
+				 |
+				 +-- Family Risk
+						|
+						+-- Trade Risk
 					
 The platform supports configurable risk parameters such as:
 
@@ -427,17 +427,17 @@ The platform supports configurable risk parameters such as:
 The risk engine acts as a control layer between strategy-generated
 opportunities and final signal generation.
 
-Strategy Signal
-      |
-      v
-Portfolio Constraints
-      |
-      v
-Risk Engine
-      |
-      +---- Risk Allowed ----> Signal
-      |
-      +---- Risk Rejected ---> No Signal
+	Strategy Signal
+		  |
+		  v
+	Portfolio Constraints
+		  |
+		  v
+	Risk Engine
+		  |
+		  +---- Risk Allowed ----> Signal
+		  |
+		  +---- Risk Rejected ---> No Signal
 	  
 This prevents individual strategies from bypassing portfolio-level
 risk constraints.
@@ -475,25 +475,25 @@ only on the diversification provided by having multiple strategies.
 The platform monitors strategy-family, group, and portfolio health.
 The health architecture is:
 
-Family Performance
-        |
-        v
-Family Health Score
-        |
-        v
-Group Performance
-        |
-        v
-Group Health Score
-        |
-        v
-Portfolio Performance
-        |
-        v
-Portfolio Health Score
-        |
-        v
-Adaptive Allocation
+	Family Performance
+			|
+			v
+	Family Health Score
+			|
+			v
+	Group Performance
+			|
+			v
+	Group Health Score
+			|
+			v
+	Portfolio Performance
+			|
+			v
+	Portfolio Health Score
+			|
+			v
+	Adaptive Allocation
 
 # 8.1 Family Health
 The Family Health Engine monitors the recent behaviour of a strategy
@@ -521,15 +521,15 @@ strategies and families contained within a group.
 
 Conceptually:
 
-Family Performance
-       +
-Family Health
-       |
-       v
-Group Performance
-       |
-       v
-Group Health Score
+	Family Performance
+		   +
+	Family Health
+		   |
+		   v
+	Group Performance
+		   |
+		   v
+	Group Health Score
 
 This provides a higher-level view of the performance of a group rather
 than evaluating every family independently.
@@ -563,21 +563,21 @@ Opportunity Score:
 	
 The two signals can therefore be used independently or together.
 
-Recent Performance
-       |
-       v
-Health Score
-       |
-       |
-Current Market Environment
-       |
-       v
-Opportunity Score
-       |
-       +----------------+
-                        |
-                        v
-                Adaptive Allocation
+	Recent Performance
+		   |
+		   v
+	Health Score
+		   |
+		   |
+	Current Market Environment
+		   |
+		   v
+	Opportunity Score
+		   |
+		   +----------------+
+							|
+							v
+					Adaptive Allocation
 				
 # 8.5 Adaptive Allocation
 
@@ -586,31 +586,31 @@ risk and allocation limits.
 
 For example:
 
-Family A
-Health: Strong
-Opportunity: High
-        |
-        v
-Allocation maintained / increased within limits
+	Family A
+	Health: Strong
+	Opportunity: High
+			|
+			v
+	Allocation maintained / increased within limits
 
 
-Family B
-Health: Deteriorating
-Opportunity: Low
-        |
-        v
-Allocation reduced within limits
+	Family B
+	Health: Deteriorating
+	Opportunity: Low
+			|
+			v
+	Allocation reduced within limits
 
-Adaptive allocation does not replace the risk engine.
+	Adaptive allocation does not replace the risk engine.
 
-Instead:
-Adaptive Allocation
-        |
-        v
-Risk Constraints
-        |
-        v
-Final Exposure
+	Instead:
+	Adaptive Allocation
+			|
+			v
+	Risk Constraints
+			|
+			v
+	Final Exposure
 
 This ensures that allocation changes remain subject to portfolio-level
 risk controls.
@@ -620,19 +620,19 @@ risk controls.
 The platform provides a progression from historical research to live
 signal delivery.
 
-Historical Data
-      |
-      v
-Backtesting
-      |
-      v
-Paper Trading
-      |
-      v
-Live Signal Generation
-      |
-      v
-Webhook Delivery
+	Historical Data
+		  |
+		  v
+	Backtesting
+		  |
+		  v
+	Paper Trading
+		  |
+		  v
+	Live Signal Generation
+		  |
+		  v
+	Webhook Delivery
 
 # 9.1 Backtesting
 
@@ -688,28 +688,28 @@ backtesting and live signal consumption.
 After selecting a portfolio configuration, the platform evaluates
 live market data against the configured strategy and risk framework.
 
-Live Market Data
-      |
-      v
-Feature Engineering
-      |
-      v
-ML / Market Structure
-      |
-      v
-Strategy Evaluation
-      |
-      v
-Opportunity Evaluation
-      |
-      v
-Portfolio Constraints
-      |
-      v
-Risk Engine
-      |
-      v
-	Signal
+	Live Market Data
+		  |
+		  v
+	Feature Engineering
+		  |
+		  v
+	ML / Market Structure
+		  |
+		  v
+	Strategy Evaluation
+		  |
+		  v
+	Opportunity Evaluation
+		  |
+		  v
+	Portfolio Constraints
+		  |
+		  v
+	Risk Engine
+		  |
+		  v
+		Signal
 	
 # 10. Webhook & Execution Separation
 
@@ -721,19 +721,19 @@ provide exchange API keys to the platform.
 
 Instead, signals are transmitted through webhooks.
 
-AI Quantitative Platform
-          |
-          v
-   Signal Generator
-          |
-          v
-   Webhook Dispatcher
-          |
-          +------> 3Commas
-          |
-          +------> Trading Platform
-          |
-          +------> User-Owned Endpoint
+	AI Quantitative Platform
+			  |
+			  v
+	   Signal Generator
+			  |
+			  v
+	   Webhook Dispatcher
+			  |
+			  +------> 3Commas
+			  |
+			  +------> Trading Platform
+			  |
+			  +------> User-Owned Endpoint
 		  
 This allows the platform to remain focused on:
 
@@ -781,15 +781,16 @@ The platform does not require users to provide their exchange API
 credentials for signal generation.
 
 The architecture is:
-Signal Platform
-      |
-      | Webhook
-      v
-User Execution Platform
-      |
-      | API Credentials
-      v
-Exchange
+
+	Signal Platform
+		  |
+		  | Webhook
+		  v
+	User Execution Platform
+		  |
+		  | API Credentials
+		  v
+	Exchange
 
 The user's execution environment is responsible for managing
 exchange authentication and account-level permissions.
@@ -798,16 +799,16 @@ exchange authentication and account-level permissions.
 Signals can be represented using cryptographic hashes.
 
 A simplified flow is:
-Generated Signal
-       |
-       v
-Canonical Signal Representation
-       |
-       v
-Cryptographic Hash
-       |
-       v
-Tamper-Evident Record
+	Generated Signal
+		   |
+		   v
+	Canonical Signal Representation
+		   |
+		   v
+	Cryptographic Hash
+		   |
+		   v
+	Tamper-Evident Record
 
 The purpose is to provide an auditable representation of the signal
 record.
