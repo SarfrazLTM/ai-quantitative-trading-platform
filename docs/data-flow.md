@@ -474,7 +474,7 @@ The platform separates signal generation from execution.
 	
 Two types of webhook integration can be supported.
 
-**Platform-Specific Webhook**
+**Platform-Specific Webhook:**
 
 Payloads can be formatted for supported third-party execution
 platforms.
@@ -485,7 +485,7 @@ platforms.
 	  ↓
 	Third-Party Execution Platform
 	
-** Generic Webhook **
+**Generic Webhook:**
 Users can also receive a generic JSON payload through their own
 webhook endpoint.
 
