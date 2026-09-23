@@ -45,7 +45,7 @@ management system.
 
 The platform is organized into several logical layers.
 
-```text
+
 			 MARKET DATA
 				  |
 				  v
@@ -102,7 +102,7 @@ The platform is organized into several logical layers.
 				 |
 				 v
 	  External Execution Layer
-```text
+
 				  
 
 The architecture intentionally separates:
