@@ -1,5 +1,5 @@
 # AI Quantitative Trading Platform
-An AI-driven quantitative trading platform for systematic cryptocurrency market analysis, strategy evaluation, portfolio construction, risk management, and real-time signal generation.
+An AI-driven quantitative trading platform for systematic crypto market analysis, strategy evaluation, portfolio construction, risk management, and real-time signal generation.
 
 ## 1. Project Overview
 This project is an AI-driven quantitative trading platform
@@ -100,7 +100,7 @@ There are three types of risk levels
 - Laravel control plane: Manages users, portfolios, configuration, subscriptions, and platform administration.
 - Redis: Provides high-speed caching, state management, queues, and inter-service communication.
 - MongoDB: Stores signals, market intelligence, strategy results, and other high-volume data.
-- Asynchronous Workers: xecute computationally intensive and background tasks without blocking real-time signal processing.
+- Asynchronous Workers: execute computationally intensive and background tasks without blocking real-time signal processing.
 - Service Separation: Separates core components into independent services for scalability, maintainability, and fault isolation.
 - Monitoring & Resilience: Provides observability, health checks, error handling, retries, and recovery mechanisms across the platform.
 
