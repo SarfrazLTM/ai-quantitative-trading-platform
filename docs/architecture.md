@@ -92,12 +92,12 @@ The platform is organized into several logical layers.
 				 |
 				 v
 	 +------------------------+
-	 | Signal Generation       |
+	 | Signal Generation      |
 	 +-----------+------------+
 				 |
 				 v
 	 +------------------------+
-	 | Webhook Dispatch        |
+	 | Webhook Dispatch       |
 	 +-----------+------------+
 				 |
 				 v
@@ -122,31 +122,31 @@ requiring a redesign of the entire platform.
 
 # 3. Quantitative Intelligence Pipeline
 
-Market Data
-     |
-     v
-Data Processing
-     |
-     v
-Feature Engineering
-     |
-     v
-Market Structure / HTF Models
-     |
-     v
-Strategy & Family Models
-     |
-     v
-Opportunity Evaluation
-     |
-     v
-Portfolio Constraints
-     |
-     v
-Risk Evaluation
-     |
-     v
-Signal Generation
+	Market Data
+		 |
+		 v
+	Data Processing
+		 |
+		 v
+	Feature Engineering
+		 |
+		 v
+	Market Structure / HTF Models
+		 |
+		 v
+	Strategy & Family Models
+		 |
+		 v
+	Opportunity Evaluation
+		 |
+		 v
+	Portfolio Constraints
+		 |
+		 v
+	Risk Evaluation
+		 |
+		 v
+	Signal Generation
 
 # 3.1 Market Data
 
