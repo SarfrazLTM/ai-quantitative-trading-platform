@@ -486,6 +486,7 @@ platforms.
 	Third-Party Execution Platform
 	
 **Generic Webhook:**
+
 Users can also receive a generic JSON payload through their own
 webhook endpoint.
 
