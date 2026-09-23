@@ -458,7 +458,7 @@ The resulting payload can contain information such as:
 - Strategy or family information
 - Signal metadata
 
-#14. Webhook Data Flow
+# 14. Webhook Data Flow
 The platform separates signal generation from execution.
 	Signal Generator
 		   ↓
@@ -501,7 +501,7 @@ webhook endpoint.
 The signal platform therefore remains independent of the user's
 execution environment.
 
-#15 Data Storage and Runtime State
+# 15 Data Storage and Runtime State
 Different categories of data require different storage and access
 patterns.
 
@@ -538,7 +538,7 @@ At a logical level, the platform manages:
 The exact database schema and internal storage implementation are
 intentionally abstracted from this public architecture document.
 
-#16. End-to-End Production Data Flow
+# 16. End-to-End Production Data Flow
 The complete live data flow can be summarized as:
 
                          MARKET DATA
