@@ -228,10 +228,10 @@ quantitative and portfolio-level decision layers.
 # 4. Multi-Timeframe & Market Structure
 The platform uses multiple execution timeframes:
 
-5m
-15m
-30m
-1h
+- 5m
+- 15m
+- 30m
+- 1h
 
 The execution timeframe is evaluated together with higher-timeframe
 market context.
@@ -274,12 +274,12 @@ LIQUIDITY_TRAP_REVERSAL
 
 Each family can operate across the supported execution timeframes:
 
-5m
-15m
-30m
-1h
+- 5m
+- 15m
+- 30m
+- 1h
 
-	This creates:
+This creates:
 	8 Strategy Families
 			x
 	4 Execution Timeframes
@@ -372,14 +372,13 @@ strategy behaviours and execution timeframes.
 Users can create multiple groups within a portfolio.
 
 For example:
+
 	Group 1
 	 |
 	 +-- TREND_PULLBACK_15m
 	 +-- BREAKOUT_CONTINUATION_30m
 	 +-- RANGE_REJECTION_30m
-	 +-- TREND_REVERSION_5m
-	 
-	 
+	 +-- TREND_REVERSION_5m	 
 	 Group 2
 	 |
 	 +-- COMPRESSION_BREAKOUT_30m
