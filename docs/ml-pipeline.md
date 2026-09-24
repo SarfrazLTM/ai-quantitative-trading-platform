@@ -1,4 +1,4 @@
-# Machine Learning Pipeline
+# AI Quantitative Trading Platform - Machine Learning Pipeline
 
 ## 1. Overview
 
