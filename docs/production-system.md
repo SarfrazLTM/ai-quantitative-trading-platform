@@ -72,7 +72,7 @@ MARKET DATA ───►│ Python Quant Runtime│
                  User Execution Platform
 				 
 				 
-#3. Control Plane and Quantitative Runtime
+# 3. Control Plane and Quantitative Runtime
 
 The platform separates administrative and user-facing responsibilities from latency-sensitive quantitative processing.
 
@@ -105,7 +105,7 @@ The Python layer is responsible for:
 
 This separation allows each part of the system to evolve independently.
 
-#4. Runtime Data Flow
+# 4. Runtime Data Flow
 
 The primary production flow is:
 
@@ -217,7 +217,7 @@ Instead:
 This reduces database pressure and provides faster runtime access.
 
 
-#8. Worker Architecture
+# 8. Worker Architecture
 
 Long-running or asynchronous tasks can be separated into dedicated workers.
 
@@ -273,7 +273,7 @@ Webhook delivery should support:
 - Idempotency
 - Monitoring
 
-#10. Idempotency
+# 10. Idempotency
 
 Distributed systems can encounter duplicate events due to retries, reconnects, worker restarts, or message redelivery.
 
@@ -292,7 +292,7 @@ Conceptually:
 Signal identifiers and processing state can be used to prevent unintended duplicate actions.
 
 
-#11. Failure Isolation
+# 11. Failure Isolation
 
 Production components should fail independently where possible.
 
@@ -315,7 +315,7 @@ Similarly:
 The objective is to prevent a failure in one subsystem from propagating through the entire platform.
 
 
-#12. Retry and Recovery
+# 12. Retry and Recovery
 
 Transient failures can be handled through controlled retries.
 
@@ -346,7 +346,7 @@ If retries are exhausted:
 	Alert / Monitoring
 	
 
-#13. Safe Failure Behaviour
+# 13. Safe Failure Behaviour
 
 The production system should fail safely when critical components are unavailable.
 
@@ -372,7 +372,7 @@ Examples:
 		  ↓
 	No Trade Authorization
 	
-#14. Logging
+# 14. Logging
 
 Production services should generate structured logs.
 
@@ -391,7 +391,7 @@ Useful fields include:
 - Processing status
 - Error information
 
-#15. Health Monitoring
+# 15. Health Monitoring
 
 The platform can expose system health at both infrastructure and quantitative levels.
 
@@ -446,7 +446,7 @@ For example:
 		  Signal Pipeline
 		  
 
-#17. Security
+# 17. Security
 
 The production architecture follows the principle of minimizing sensitive information exposure.
 
@@ -465,7 +465,7 @@ Important controls include:
 The platform's webhook model allows users to retain control of their execution-platform credentials.
 
 
-#18. Production Safety Boundaries
+# 18. Production Safety Boundaries
 
 The production system maintains several important boundaries:
 
