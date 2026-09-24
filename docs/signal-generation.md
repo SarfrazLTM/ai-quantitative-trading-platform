@@ -11,13 +11,13 @@ The engine does not independently decide position size or bypass risk controls. 
 The overall flow is:
 
 Market Data
-→ Market Intelligence
-→ Strategy Evaluation
-→ Portfolio Context
-→ Signal Decision
-→ Risk Validation
-→ Signal
-→ Webhook
+- Market Intelligence
+- Strategy Evaluation
+- Portfolio Context
+- Signal Decision
+- Risk Validation
+- Signal
+- Webhook
 
 Proprietary strategy rules, alpha-generating features, model weights, thresholds, and decision formulas are intentionally excluded from this repository.
 
