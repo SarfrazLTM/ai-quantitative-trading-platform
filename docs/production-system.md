@@ -109,31 +109,65 @@ This separation allows each part of the system to evolve independently.
 
 The primary production flow is:
 
-	Market Event
-		 ↓
-	Runtime Processing
-		 ↓
-	Feature Update
-		 ↓
-	ML Inference
-		 ↓
-	Strategy Evaluation
-		 ↓
-	Candidate Signal Event
-		 ↓
-	User Portfolio Router
-		 ↓
-	User Portfolio Workers
-		 ↓
-	Portfolio Evaluation
-		 ↓
-	Risk Evaluation
-		 ↓
-	Signal Event
-		 ↓
-	Webhook Queue
-		 ↓
-	Webhook Workers
+	                     MARKET EVENT
+                              │
+                              ▼
+                      Runtime Processing
+                              │
+                              ▼
+                       Feature Update
+                              │
+                              ▼
+                        ML Inference
+                              │
+                              ▼
+                     Strategy Evaluation
+                              │
+                              ▼
+                    Candidate Signal Event
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │  Family Health    │
+                    │      Engine       │
+                    │   (Shared)        │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    Candidate + Family Health
+                              │
+                              ▼
+                     ┌─────────────────┐
+                     │ Portfolio Router│
+                     └────────┬────────┘
+                              │
+              ┌───────────────┼───────────────┐
+              ▼               ▼               ▼
+        Portfolio A      Portfolio B      Portfolio C
+              │               │               │
+              ▼               ▼               ▼
+        Group Health      Group Health      Group Health
+          Engine            Engine            Engine
+              │               │               │
+              ▼               ▼               ▼
+       Portfolio Health  Portfolio Health  Portfolio Health
+          Engine            Engine            Engine
+              │               │               │
+              ▼               ▼               ▼
+        Portfolio + Risk Evaluation
+              │
+              └───────────────┬───────────────┘
+                              ▼
+                         Signal Event
+                              │
+                              ▼
+                        Webhook Queue
+                              │
+                              ▼
+                       Webhook Workers
+                              │
+                              ▼
+                       User Endpoint
 	
 The runtime should process events chronologically and maintain the required state for each symbol, strategy, portfolio, and timeframe.
 
