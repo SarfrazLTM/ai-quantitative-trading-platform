@@ -24,52 +24,52 @@ The production system separates control-plane responsibilities from quantitative
 
 # 2. Production Architecture
 
-                         USER
-                           │
-                           ▼
-                 ┌──────────────────┐
-                 │ Laravel Control  │
-                 │ Plane / API      │
-                 └────────┬─────────┘
-                          │
-					Configuration
-                          │
-                          ▼
-                     ┌─────────┐
-                     │ MongoDB │
-                     └────┬────┘
-                          │
-                          ▼
-                     ┌─────────┐
-                     │ Redis   │
-                     └────┬────┘
-                          │
-                          │ Runtime State / Config
-                          ▼
-                ┌─────────────────────┐
-MARKET DATA ───►│ Python Quant Runtime│
-                └──────────┬──────────┘
-                           │
-                           ▼
-                  Feature Engineering
-                           │
-                           ▼
-                     ML Inference
-                           │
-                           ▼
-                 Strategy Evaluation
-                           │
-                           ▼
-                 Portfolio / Risk
-                           │
-                           ▼
-                  Signal Generation
-                           │
-                           ▼
-                 Webhook Dispatcher
-                           │
-                           ▼
-                 User Execution Platform
+								 USER
+								   │
+								   ▼
+						 ┌──────────────────┐
+						 │ Laravel Control  │
+						 │ Plane / API      │
+						 └────────┬─────────┘
+								  │
+							Configuration
+								  │
+								  ▼
+							 ┌─────────┐
+							 │ MongoDB │
+							 └────┬────┘
+								  │
+								  ▼
+							 ┌─────────┐
+							 │ Redis   │
+							 └────┬────┘
+								  │
+								  │ Runtime State / Config
+								  ▼
+						┌─────────────────────┐
+		MARKET DATA ───►│ Python Quant Runtime│
+						└──────────┬──────────┘
+								   │
+								   ▼
+						  Feature Engineering
+								   │
+								   ▼
+							 ML Inference
+								   │
+								   ▼
+						 Strategy Evaluation
+								   │
+								   ▼
+						 Portfolio / Risk
+								   │
+								   ▼
+						  Signal Generation
+								   │
+								   ▼
+						 Webhook Dispatcher
+								   │
+								   ▼
+						 User Execution Platform
 				 
 				 
 # 3. Control Plane and Quantitative Runtime
