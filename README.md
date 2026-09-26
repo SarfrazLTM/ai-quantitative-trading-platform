@@ -28,37 +28,37 @@ risk management, and signal delivery.
 - Webhook Delivery
 
 ## 3. System Architecture
-[Architecture diagram]
+[Architecture diagram](docs/architecture.md)
 
 ## 4. End-to-End Data Flow
-Market Data
-    ↓
-Feature Engineering
-    ↓
-Market Structure
-    ↓
-ML Models
-    ↓
-Strategy Decision
-    ↓
-Family/Group/Portfolio Risk Engine
-    ↓
-Signal
-    ↓
-Webhook
+	Market Data
+		↓
+	Feature Engineering
+		↓
+	Market Structure
+		↓
+	ML Models
+		↓
+	Strategy Decision
+		↓
+	Family/Group/Portfolio Risk Engine
+		↓
+	Signal
+		↓
+	Webhook
 
 ## 5. Machine Learning Pipeline
-Historical Data
-    ↓
-Feature Engineering
-    ↓
-Training
-    ↓
-Time-Series Validation
-    ↓
-Evaluation
-    ↓
-Production Inference
+	Historical Data
+		↓
+	Feature Engineering
+		↓
+	Training
+		↓
+	Time-Series Validation
+		↓
+	Evaluation
+		↓
+	Production Inference
 
 ## 6. Backtesting & Validation
 #### 1. Data Integrity & Realistic Execution
@@ -154,11 +154,13 @@ artifacts, production credentials, and certain production services
 are intentionally excluded from this repository.
 
 ## 12. Detailed Documentation
-- Architecture
-- ML Pipeline
-- Backtesting
-- Risk Management
-- Design Decisions
+- [Architecture](docs/architecture.md)
+- [ML Pipeline](docs/ml-pipeline.md)
+- [Backtesting](docs/backtesting.md)
+- [Risk Management](docs/risk-management.md)
+- [Design Decisions](docs/design-decisions.md)
+- [Data Flow](docs/data-flow.md)
+- [Production System](docs/production-system.md)
 
 ## 13. Disclaimer
 Educational/research purposes, not financial advice.
