@@ -28,7 +28,7 @@ risk management, and signal delivery.
 - Webhook Delivery
 
 ## 3. System Architecture
-[Architecture diagram](docs/architecture.md)
+[Architecture diagram](diagrams/system-architecture.png)
 
 ## 4. End-to-End Data Flow
 	Market Data
