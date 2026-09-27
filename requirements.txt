@@ -1,0 +1,21 @@
+# ============================================================
+# Quantitative Trading Platform
+# Runtime Dependencies
+# ============================================================
+
+# Data processing
+numpy>=2.0,<3.0
+pandas>=2.2,<3.0
+
+# Machine learning
+scikit-learn>=1.5,<2.0
+xgboost>=2.1,<4.0
+
+# HTTP / webhook delivery
+requests>=2.32,<3.0
+
+# Binance market-data websocket
+websocket-client>=1.8,<2.0
+
+# Configuration
+PyYAML>=6.0,<7.0

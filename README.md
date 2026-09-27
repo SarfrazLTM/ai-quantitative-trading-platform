@@ -114,12 +114,12 @@ There are three types of risk levels
 - ML model probability score calibrators
 
 ## 10. Repository Structure
-configs/ — Platform-level YAML configuration files and strategy settings.
-diagrams/ — Architecture, component, and data-flow diagrams.
-docs/ — Detailed technical documentation covering architecture, design, and workflows.
-src/ — Core platform source code and major architectural components.
-tests/ — Unit, integration, and system tests.
-examples/ — Sample configurations, API payloads, workflows, and usage examples.
+- configs/ — Platform-level YAML configuration files and strategy settings.
+- diagrams/ — Architecture, component, and data-flow diagrams.
+- docs/ — Detailed technical documentation covering architecture, design, and workflows.
+- src/ — Core platform source code and major architectural components.
+- tests/ — Unit, integration, and system tests.
+- examples/ — Sample configurations, API payloads, workflows, and usage examples.
 
 ## 11. Project Status
 The platform is currently under active development and includes
