@@ -168,7 +168,7 @@ The same historical observation window must be used for every strategy pair at e
 Pearson correlation measures the strength and direction of a linear relationship between two return series.
 
 $$
-\rho_{X,Y} = \frac{\operatorname{Cov}(X,Y)}{\sigma_X \sigma_Y}
+\rho_{X,Y} = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}
 $$
 
 Interpretation:
