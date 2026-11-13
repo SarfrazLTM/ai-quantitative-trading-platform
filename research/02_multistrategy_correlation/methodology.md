@@ -272,17 +272,15 @@ Two strategies can have positive long-term correlation but still provide diversi
 
 For a portfolio equity series:
 
-\[
-Drawdown_t =
-\frac{Equity_t - PeakEquity_t}
-{PeakEquity_t}
-\]
+$$
+\text{Drawdown}_t = \frac{\text{Equity}_t - \text{PeakEquity}_t}{\text{PeakEquity}_t}
+$$
 
 Where:
 
-\[
-PeakEquity_t = \max(Equity_0,\ldots,Equity_t)
-\]
+$$
+\text{PeakEquity}_t = \max(\text{Equity}_0, \ldots, \text{Equity}_t)
+$$
 
 Maximum drawdown is the largest peak-to-trough percentage decline.
 
