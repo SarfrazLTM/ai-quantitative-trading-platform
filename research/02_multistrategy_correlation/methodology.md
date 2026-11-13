@@ -223,15 +223,9 @@ Two trades overlap when:
 
 For trades A and B, the overlap duration is:
 
-\[
-Overlap =
-\max\left(
-0,\,
-\min(Exit_A,Exit_B)
--
-\max(Entry_A,Entry_B)
-\right)
-\]
+$$
+\text{Overlap} = \max\left(0, \, \min(Exit_A, Exit_B) - \max(Entry_A, Entry_B)\right)
+$$
 
 A positive duration indicates overlapping exposure.
 
