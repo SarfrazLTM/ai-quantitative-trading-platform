@@ -1,4 +1,4 @@
-# Research 05 — Risk Management Effectiveness
+# Research 04 — Risk Management Effectiveness
 
 ## 1. Objective
 
@@ -261,6 +261,6 @@ The initial analysis run completed and produced its reports. The results are use
 
 ---
 
-**Research:** 05 — Risk Management Effectiveness  
+**Research:** 04 — Risk Management Effectiveness  
 **Primary artifacts:** `analysis.py`, four input CSV exports, generated CSV reports, charts, run manifest, and analysis log  
 **Baseline period:** 2024-01-15 to 2026-09-30
