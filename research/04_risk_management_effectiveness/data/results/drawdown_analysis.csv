@@ -1,0 +1,2 @@
+Start_Equity,End_Equity,Net_Equity_Change,Total_Return_Pct,Maximum_Drawdown_Pct,Maximum_Drawdown_Amount,Peak_Time,Trough_Time,Recovery_Time,Recovery_Hours,Equity_Observations
+1000.0,1975.7178074145356,975.7178074145356,97.57178074145357,-14.21397111354136,-297.0292607146762,2026-02-19 13:30:00,2026-05-14 18:30:00,2026-06-06 04:00:00,537.5,47473

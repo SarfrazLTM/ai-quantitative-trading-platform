@@ -1,0 +1,9 @@
+Rejection_Reason,Count
+Candidate would exceed portfolio maximum open risk,11631
+Health gate rejected candidate (currently disabled in source),5077
+Candidate would exceed family risk cap,1963
+Maximum open positions per symbol reached,716
+Existing portfolio risk is already at or above the risk cap,676
+Candidate would exceed GROUP_1 risk cap,163
+Candidate would exceed GROUP_2 risk cap,145
+Candidate would exceed GROUP_3 risk cap,8
